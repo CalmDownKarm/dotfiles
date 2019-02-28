@@ -1,0 +1,22 @@
+Host paperspace
+     HostName 209.51.170.250 
+     IdentityFile ~/.ssh/id_rsa
+     # StrictHostKeyChecking no  
+     User paperspace
+     LocalForward 8888 localhost:8888
+
+Host iiitd
+     HostName 192.168.23.36
+     IdentityFile ~/.ssh/acer.pub
+     User karmanya
+     LocalForward 9999 localhost:9999
+
+Host impactNews
+     HostName services.impactmeasurement.co.in
+     Port 8887
+     User root
+     IdentityFile ~/.ssh/id_rsa.pub
+Host colfax
+User u15755
+IdentityFile ~/Downloads/colfax-access-key-15755
+ProxyCommand ssh -T -i ~/Downloads/colfax-access-key-15755 guest@cluster.colfaxresearch.com
