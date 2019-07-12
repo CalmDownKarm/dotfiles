@@ -7,3 +7,13 @@ Host matterhorn
     HostName matterhorn.d2.comp.nus.edu.sg
     User rajivratn
     LocalForward 1123 localhost:1123
+
+Host skywalker
+     Hostname 192.168.30.235
+     User karmanya
+     LocalForward 1123 localhost:1123
+
+Host dell
+     Hostname 40.121.167.23
+     User gramener
+     LocalForward 1123 localhost:1123
